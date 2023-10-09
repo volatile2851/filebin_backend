@@ -12,4 +12,4 @@ app.use(bodyParser.json({ extended: true }));
 app.use('/', routes);
 
 
-app.listen(8000, () => console.log('server started successfully'));
+app.listen(process.env.port, () => console.log('server started successfully'));
